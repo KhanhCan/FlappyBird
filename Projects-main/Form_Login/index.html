@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="login_wrapper">
+      <!-- form dang nhap  -->
+      <form action="" class="form">
+        <img src="img/avatar.png" alt="avatar" />
+        <h2>Đăng Nhập</h2>
+        <div class="input_group">
+          <input type="text" name="loginUser" id="loginUser" required />
+          <label for="loginUser">Tên đăng nhập</label>
+        </div>
+        <div class="input_group">
+          <input type="password" name="loginPw" id="loginPw" required />
+          <label for="loginPw">Mật Khẩu</label>   
+        </div>
+        <input type="submit" value="Đăng Nhập" class="submit_btn" />
+        <br />
+        <a href="#forgot_pw" class="forgot_pw">Quên mật khẩu</a>
+        <br>
+        <a href="#register" class="register">Đăng ký</a>
+      </form>
+      <!-- form quen mat khau  -->
+      <div id="forgot_pw">
+        <form action="" class="form">
+          <a href="#" class="close"> <i class="glyphicon glyphicon-remove"></i>
+          </a>
+          <h2>Đặt lại mật khẩu</h2>
+          <div class="input_group">
+            <input type="email" name="email" id="email" required />
+            <label for="email">Nhập Email</label>
+          </div>
+          <input type="submit" value="Xác nhận" class="submit_btn" />
+        </form>
+      </div>
+      <!-- form dang ky -->
+
+      <div id="register">
+        <form action="" class="form">
+          <a href="#" class="close"> <i class="glyphicon glyphicon-remove"></i>
+          </a>
+          <h2>Tạo tài khoản mới</h2>
+          <div class="input_group">
+            <input type="email" name="email" id="email" required />
+            <label for="email">Nhập Email</label>
+          </div>
+          <div class="input_group">
+            <input type="text" name="Tên Tài Khoản" id="newUser" required />
+            <label for="newUser">Tên tài khoản</label>
+          </div>
+          <div class="input_group">
+            <input type="password" name="Mật Khẩu" id="loginPw" required />
+            <label for="loginPw">Mật Khẩu</label>
+          </div>
+          <div class="input_group">
+            <input type="password" name="Xác Nhận Mật Khẩu" id="loginPw" required />
+            <label for="loginPw">Xác Nhận Mật Khẩu</label>
+          </div>
+
+          <input type="submit" value="Đăng ký" class="submit_btn" />
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+</html>
